@@ -1,0 +1,79 @@
+body {
+    background-color: white;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 165%;
+    margin: 0px;
+}
+div.row{
+    display: flex;
+    flex-wrap: nowrap;
+}
+div.column{
+    width: 25px;
+    margin-left: 11px;
+    margin-top: 11px;
+    width: 23.5%;
+}
+div{
+    display: inline-block;
+    text-align: left;
+}
+fieldset{
+    text-align: center;
+    border: 1px solid grey;
+}
+legend{
+    text-align: left;
+    margin-left: 3.5%;
+}
+div.label{
+    width: 35%;
+}
+div.input{
+    width: 55%;
+}
+div.result{
+    font-style: italic;
+    color: red;
+    text-align: center;
+}
+div.input input{
+    font-style: italic;
+}
+div.input input:not(:focus){
+    color: grey;
+}
+div.submit{
+    width: 45%;
+}
+div.reset{
+    width: 45%;
+    opacity: 50%;
+}
+input{
+    width: 100%;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 13px;
+}
+input.radio{
+    width: 25%;
+}
+textarea{
+    width: 92.5%;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 165%;
+    font-style: italic;
+}
+textarea:not(:focus){
+    color: grey;
+}
+div.textarea{
+    width: 92.5%;
+}
+select{
+    width: 100%;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 13px;
+}
