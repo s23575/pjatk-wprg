@@ -3,66 +3,12 @@
         <meta charset="UTF-8" />
         <title>Zad. 2.1</title>
 <!-- Styl -->
-        <style>
-            body{
-                background-color: white;
-                font-family: Tahoma, Arial, sans-serif;
-                font-size: 13px;
-                margin: 13px;
-                line-height: 165%;
-            }
-            fieldset{
-                width: 20%;
-                text-align: center;
-                border: 1px solid grey;
-            }
-            legend{
-                font-weight: bold;
-                text-align: left;
-                margin-left: 3.5%;
-            }
-            div{
-                display: inline-block;
-                text-align: left;
-            }
-            div.description{
-                width: 91.5%;
-            }
-            div.label{
-                width: 30%;
-            }
-            div.input{
-                width: 60%;
-            }
-            div.submit{
-                width: 45%;
-            }
-            div.reset{
-                width: 45%;
-                opacity: 50%;
-            }
-            div.result{
-                width: 91.5%;
-                text-align: center;
-            }
-            div.result b{
-                color: red;
-            }
-            input{
-                width: 100%;
-                font-family: Tahoma, Arial, sans-serif;
-                font-size: 13px;
-            }
-            select{
-                width: 100%;
-                font-family: Tahoma, Arial, sans-serif;
-                font-size: 13px;
-            }
-        </style>
+        <link rel="stylesheet" href="zad_2_1.css">
     </head>
     <body>
 <!-- Formularz -->
-        <form method="get">
+        <form method="get" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+<!-- "Action" według: https://www.w3schools.com/php/php_form_validation.asp -->
             <fieldset>
                 <legend>Kalkulator</legend>
                     <div class="description">Wpisz dowolne liczby, a następnie wybierz rodzaj działania:</div>
