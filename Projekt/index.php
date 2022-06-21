@@ -47,7 +47,7 @@ session_start();
                         ');
                         if (isset($_SESSION['action'])) {
                             echo('
-                            <div class="result">' . $_SESSION['error'] . '</div><p>
+                            <div class="negative">' . $_SESSION['error'] . '</div><p>
                             ');
                         }
                         echo('
@@ -68,7 +68,7 @@ session_start();
                         ');
                         if (isset($_SESSION['action'])) {
                             echo('
-                            <div class="result">' . $_SESSION['error'] . '</div><p>
+                            <div class="negative">' . $_SESSION['error'] . '</div><p>
                             ');
                         }
                         echo('
@@ -85,7 +85,6 @@ session_start();
                         <input name="pass" value="Hasło" type="password" minlength="3" autocomplete="off" required><p>
                         <input class="radio" name="auth_opt" type="hidden" value="register" required>
                     </div>
-    
                             ');
                     }
                 }
@@ -101,7 +100,7 @@ session_start();
             <fieldset>
                 <legend>Wyślij formularz</legend>
                 <p>
-                <div class="primary"><input type="submit" name="auth" value="Wyślij"></div>&nbsp;
+                <div class="primary"><input type="submit" name="auth" value="Wyślij"></div>&nbsp;&nbsp;
                 <div class="secondary"><input type="reset" value="Wyczyść"></div><p>
                 <p>
             </fieldset>
@@ -113,11 +112,14 @@ session_start();
 
     <div class="row">
         <div class="column">
-            <i>Maciej Zagórski, s23575, gr. 43c</i>
-            <p>
+            <br><i>Maciej Zagórski, s23575, gr. 43c</i>
         </div>
     </div>
 
 </form>
 </body>
 </html>
+
+<?php
+session_destroy();
+?>

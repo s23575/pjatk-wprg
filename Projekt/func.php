@@ -1,7 +1,7 @@
 <?php
 function db_connect()
 {
-    $db_error = '<div class="result"><b>Wystapił błąd!</b><br>Nie udało się połączyć z bazą danych</div><p>';
+    $db_error = '<div class="negative"><b>Wystapił błąd!</b><br>Nie udało się połączyć z bazą danych</div><p>';
     if (!$db_link = mysqli_connect("localhost", "root", "root")) {
         echo($db_error);
     }
@@ -14,8 +14,20 @@ function db_connect()
 function auth_error($opt, $error)
 {
     $_SESSION['action'] = $opt;
-    $_SESSION['error'] = $error;
+    $_SESSION['error'] = "<b>Wystąpił błąd!</b> " . $error;
     header("Location: index.php");
+}
+
+function logout() {
+    unset($_SESSION['email']);
+    unset($_SESSION['pass']);
+    unset($_SESSION['action']);
+    unset($_SESSION['error']);
+    header("Location: index.php");
+}
+
+function valid_dates($date_start, $date_end) {
+
 }
 
 ?>
