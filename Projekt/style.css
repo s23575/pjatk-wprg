@@ -87,7 +87,9 @@ input {
 }
 
 input.radio {
-    width: 10%;
+    width: 20px;
+    margin-right: 10px;
+    margin-left: -5px;
 }
 
 textarea {

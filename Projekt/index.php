@@ -52,7 +52,7 @@ session_start();
                         }
                         echo('
                     <div class="label">
-                        <label for="email">Adres e-mail: </label><p>
+                        <label for="email">Adres e-mail : </label><p>
                         <label for="pass">Hasło : </label><p>
                     </div>
                     <div class="input">

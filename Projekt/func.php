@@ -19,15 +19,7 @@ function auth_error($opt, $error)
 }
 
 function logout() {
-    unset($_SESSION['email']);
-    unset($_SESSION['pass']);
-    unset($_SESSION['action']);
-    unset($_SESSION['error']);
+    unset($_SESSION);
     header("Location: index.php");
 }
-
-function valid_dates($date_start, $date_end) {
-
-}
-
 ?>
