@@ -44,6 +44,11 @@ div.input {
     width: 55%;
 }
 
+div.radio {
+    width: 90%;
+    text-align: center;
+}
+
 div.negative {
     font-style: italic;
     color: red;
